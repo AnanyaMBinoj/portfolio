@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ananya M Binoj | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f9f7; /* very light green / soft cream */
+      color: #1e3a2b; /* dark green text for readability */
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      background: #a3d9a5; /* soft green */
+      color: #1e3a2b;
+      padding: 40px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-bottom: 2px solid #81c784;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #1e3a2b;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #4CAF50; /* accent on hover */
+    }
+
+    /* Sections */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    section h2 {
+      margin-bottom: 25px;
+      text-align: center;
+      color: #4CAF50;
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* About */
+    #about {
+      text-align: center;
+    }
+
+    #about p {
+      font-size: 1.2rem;
+      max-width: 750px;
+      margin: auto;
+      color: #2e4d3c;
+    }
+
+    /* Education */
+    #education ul {
+      list-style: none;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    #education li {
+      background: #e0f2e9; /* light green card */
+      margin: 15px 0;
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    #education li strong {
+      display: block;
+      font-size: 1.2rem;
+      color: #2e4d3c;
+    }
+
+    #education li p {
+      margin-top: 5px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #2e4d3c;
+    }
+
+    #education li:hover {
+      background: #c1e2c7;
+      transform: translateY(-5px);
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skills-list span {
+      background: #d4f1d3;
+      color: #2e4d3c;
+      padding: 14px 22px;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .skills-list span:hover {
+      background: #4CAF50;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    /* Projects */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: #e0f2e9;
+      padding: 22px;
+      border-radius: 15px;
+      box-shadow: 0px 5px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      background: #c1e2c7;
+      transform: translateY(-8px);
+    }
+
+    .project h3 {
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2e4d3c;
+    }
+
+    /* Contact */
+    .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .contact-info a {
+      color: #2e4d3c;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: #4CAF50;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #a3d9a5;
+      color: #2e4d3c;
+      margin-top: 40px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Ananya M Binoj</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am <strong>Ananya M Binoj</strong>, a passionate student currently pursuing B.Tech at Govt. Engineering College Wayanad.I focus on building efficient, user-friendly solutions and continuously improving my technical and problem-solving skills. This portfolio showcases my education, skills, and projects.</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>B.Tech – Govt. Engineering College Wayanad</strong>
+        <p>Specialization: Computer Science & Engineering</p>
+      </li>
+      <li>
+        <strong>Higher Secondary – WOHSS Pinangode</strong>
+        <p>Stream: Science</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>Python</span>
+      <span>C</span>
+      <span>Java</span>
+      <span>HTML&CSS</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Local Hazard and Disaster Management System</h3>
+        <p>The project titled “Local Hazard and Disaster Management System” is
+a web-based application designed to aid communities in effectively managing
+and responding to local disasters and hazards. The system enables
+residents, volunteers, and administrators to collaborate in real-time, ensuring
+timely communication and efficient allocation of resources during
+emergencies.</p>
+      </div>
+      <div class="project">
+        <h3>SmartStyle – AI Powered Virtual Try-On Boutique</h3>
+        <p>SmartStyle is a digital platform integrating essential shopping features with 3D avatar-based virtual try-on technology. It includes wishlist, cart, billing, tracking, and AI-based recommendations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:ananyabinoj2004@gmail.com">ananyabinoj2004@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/AnanyaMBinoj" target="_blank">AnanyaMBinoj</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ananya M Binoj | Portfolio</p>
+  </footer>
+
+  <script>
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
