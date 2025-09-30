@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sisira D R | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f9ff; /* light professional blue shade */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #005f99, #0077cc); 
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin-bottom: 8px;
+      font-size: 2.3rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #cce7ff;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      margin-bottom: 25px;
+      text-align: center;
+      color: #005f99;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* About */
+    #about p {
+      text-align: center;
+      font-size: 1.15rem;
+      font-weight: 500;
+      max-width: 750px;
+      margin: auto;
+      color: #444;
+    }
+
+    /* Education */
+    #education .edu-item {
+      background: #e6f2ff; 
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #cce0ff;
+      transition: 0.3s;
+    }
+
+    #education .edu-item:hover {
+      background: #0077cc;
+      color: white;
+      transform: scale(1.03);
+    }
+
+    #education h3 {
+      margin-bottom: 8px;
+      font-size: 1.3rem;
+      color: #005f99;
+    }
+
+    #education p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    #education .edu-item:hover h3,
+    #education .edu-item:hover p {
+      color: white;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skills-list span {
+      background: #cce7ff;
+      color: #00334d;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+
+    .skills-list span:hover {
+      background: #0077cc;
+      color: white;
+      transform: translateY(-4px);
+    }
+
+    /* Projects */
+    .project {
+      background: #f9fcff;
+      margin: 15px 0;
+      padding: 22px;
+      border-radius: 15px;
+      box-shadow: 0px 5px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      border-left: 5px solid #0077cc;
+    }
+
+    .project:hover {
+      background: #0077cc;
+      color: white;
+      transform: scale(1.03);
+    }
+
+    .project h3 {
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    /* Contact Buttons */
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg, #005f99, #0077cc);
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      display: inline-block;
+    }
+
+    .contact-links a:hover {
+      background: linear-gradient(135deg, #00334d, #005f99);
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.25);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #005f99;
+      color: white;
+      margin-top: 40px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Sisira D R</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am <strong>Sisira D R</strong>, a dedicated student currently pursuing B.Tech at Govt. Engineering College Wayanad. I have a keen interest in programming, problem-solving, and exploring modern technologies. This portfolio highlights my education, skills, and projects that reflect my journey in technology.</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <h3>B.Tech in Computer Science</h3>
+      <p>Pursuing Bachelor of Technology in Computer Science at Govt. Engineering College Wayanad.</p>
+    </div>
+    <div class="edu-item">
+      <h3>Diploma in Computer Application and Business Management</h3>
+      <p>Pursuing Diploma in  Computer Application and Business Management at Residential Women Polytechnical College Payyannur .</p>
+    </div>
+    <div class="edu-item">
+      <h3>JNM HSS Puthuppanam – Science Stream</h3>
+      <p>Completed Higher Secondary education with a strong focus in Physics, Chemistry, and Mathematics, building the foundation for engineering studies.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>Python</span>
+      <span>C</span>
+      <span>Java</span>
+      <span>HTML&CSS</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>CertiChain: Certificate generation and veri-
+fication websire powered by blockchain</h3>
+      <p>The project "CertiChain" is a blockchain-powered web-based certificate generation and
+verification system aimed at enhancing the security and authenticity of academic creden-
+tials. By leveraging the Ethereum blockchain and deploying transactions on the Sepolia
+testnet, this system ensures tamper-proof, transparent, and verifiable certificate issuance
+.</p>
+    </div>
+    <div class="project">
+      <h3>SmartStyle -AI Powered Virtual Try-On
+Boutique</h3>
+      <p>SmartStyle – AI Powered Virtual Try-On Boutique, is a digital
+platform designed to integrate essential online shopping features with 3D avatar-based
+virtual try-on technology.The application will cover multiple areas such as personalized
+avatar generation, virtual dress and ornament try-on, wishlist and cart management, bill
+generation, order tracking, secure payment processing, and AI-based product recommendations.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+      <a href="mailto:sisira_23l001cs@gecwyd.ac.in">Email</a>
+      <a href="https://github.com/SISIRADR" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sisira D R | Portfolio</p>
+  </footer>
+
+  <script>
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
